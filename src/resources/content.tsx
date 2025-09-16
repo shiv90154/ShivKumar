@@ -19,17 +19,39 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "shiva90154@gmail.com", // replace with your actual email
   location: "Asia/Kolkata", // IANA time zone identifier
-  languages: ["English", "Hindi"], // optional
+  languages: ["English", "Hindi","Punjabi"], // optional
 };
 
 // ----- Newsletter -----
+// const newsletter: Newsletter = {
+//   display: true,
+//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
+//   description: (
+//     <>My weekly newsletter about web development, coding tips, and projects.</>
+//   ),
+// };
+
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Contact Me</>,
   description: (
-    <>My weekly newsletter about web development, coding tips, and projects.</>
+    <>
+    
+      If you want to contact me, just send a WhatsApp message at{" "}
+      <a
+        href="https://wa.me/919015484569"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <b>90154845696</b>
+      </a>.
+
+      <br />
+     <b> Newsletter coming soon!</b>
+    </>
   ),
 };
+
 
 // ----- Social Links -----
 const social: Social = [
@@ -182,16 +204,13 @@ work: {
     {
       company: "Career Info Wisit Solution",
       timeframe: "June 2023 - Present",
-      role: "HR & Web Development Intern",
+      role: "Web Development Intern",
       achievements: [
         <>
           Assisted in HR recruitment processes while simultaneously contributing to web development projects.
         </>,
         <>
           Developed internal dashboards and automated workflows using React and Node.js.
-        </>,
-        <>
-          Managed project coordination between HR and development teams, ensuring smooth delivery of tasks.
         </>,
       ],
       // images: [
@@ -214,11 +233,11 @@ work: {
       description: <>B.Tech in Computer Science (2022 - 2026)</>,
     },
     {
-      name: "GSSS Girar Gran, HPBoard",
+      name: "GSSS Giara Gran, HPBoard",
       description: <>Completed 12th in 2022</>,
     },
     {
-      name: "GSSS Girar Gran, HPBoard",
+      name: "GSSS Giara Gran, HPBoard",
       description: <>Completed 10th in 2020</>,
     },
   ],
