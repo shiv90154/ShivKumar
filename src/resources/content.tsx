@@ -39,11 +39,11 @@ const newsletter: Newsletter = {
     
       If you want to contact me, just send a WhatsApp message at{" "}
       <a
-        href="https://wa.me/919015484569"
+        href="https://wa.me/919015484696"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <b>90154845696</b>
+        <b>9015484696</b>
       </a>.
 
       <br />
