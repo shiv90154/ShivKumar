@@ -1,0 +1,127 @@
+---
+title: "JavaScript Basics - Day 2: Operators & Expressions"
+summary: "Understand how operators work in JavaScript, including arithmetic, comparison, logical, and assignment operators."
+image: "/images/blogs/js-day2.jpg"
+publishedAt: "2025-09-18"
+tag: "JavaScript Basics"
+---
+
+## Introduction
+
+Welcome to **Day 2** of the JavaScript Basics series 🎉.  
+Today we’ll dive into **operators** (symbols that perform actions) and **expressions** (combinations of values and operators).
+
+## Arithmetic Operators
+
+Arithmetic operators are used to perform basic mathematical operations.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="4"
+    codes={[
+  {
+    code:
+`let a = 10;
+let b = 3;
+
+console.log(a + b); // 13 (Addition)
+console.log(a - b); // 7  (Subtraction)
+console.log(a * b); // 30 (Multiplication)
+console.log(a / b); // 3.33... (Division)
+console.log(a % b); // 1  (Remainder)
+console.log(a ** b); // 1000 (Exponentiation)`,
+    language: "js",
+    label: "arithmetic.js"
+  }
+]} />
+
+## Comparison Operators
+
+Comparison operators are used to compare values and return `true` or `false`.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="5"
+    codes={[
+  {
+    code:
+`let x = 5;
+let y = "5";
+
+console.log(x == y);  // true  (loose equality, only checks value)
+console.log(x === y); // false (strict equality, checks value + type)
+console.log(x != y);  // false
+console.log(x > 3);   // true
+console.log(x <= 5);  // true`,
+    language: "js",
+    label: "comparison.js"
+  }
+]} />
+
+## Logical Operators
+
+Logical operators combine conditions.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="4"
+    codes={[
+  {
+    code:
+`let isLoggedIn = true;
+let isAdmin = false;
+
+console.log(isLoggedIn && isAdmin); // false (AND)
+console.log(isLoggedIn || isAdmin); // true  (OR)
+console.log(!isLoggedIn);           // false (NOT)`,
+    language: "js",
+    label: "logical.js"
+  }
+]} />
+
+## Assignment Operators
+
+Assignment operators assign values and can also combine with arithmetic.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="4"
+    codes={[
+  {
+    code:
+`let num = 10;
+
+num += 5;  // 15
+num -= 3;  // 12
+num *= 2;  // 24
+num /= 4;  // 6`,
+    language: "js",
+    label: "assignment.js"
+  }
+]} />
+
+## Expressions
+
+An **expression** is any valid code that produces a value.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="2"
+    codes={[
+  {
+    code:
+`let result = (10 + 5) * 2; // 30
+console.log(result);`,
+    language: "js",
+    label: "expressions.js"
+  }
+]} />
+
+## Why This Matters
+
+Operators and expressions are the **building blocks of logic** in JavaScript.  
+They allow you to calculate values, compare results, and control program flow.
+
+---
+
+👉 Next up in **Day 3**: **Functions in JavaScript** ⚡

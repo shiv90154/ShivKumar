@@ -1,0 +1,74 @@
+---
+title: "JavaScript Basics - Day 1: Variables and Data Types"
+summary: "Learn how to declare variables in JavaScript using var, let, and const, and explore primitive and reference data types."
+image: "/images/blogs/js-day1.jpg"
+publishedAt: "2025-09-17"
+tag: "JavaScript Basics"
+---
+
+## Introduction
+
+Welcome to **Day 1** of the JavaScript Basics series 🎉.  
+Today we’ll cover **variables** (how to store data) and **data types** (what kind of data we can store).
+
+## Declaring Variables
+
+Variables in JavaScript can be declared using `var`, `let`, or `const`.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`var city = "Delhi";    // Old way, avoid using
+let age = 21;           // Can be reassigned
+const country = "India"; // Cannot be reassigned`,
+    language: "js",
+    label: "variables.js"
+  }
+]} />
+
+- **var** → Function scoped, can be redeclared (not recommended).  
+- **let** → Block scoped, best for values that change.  
+- **const** → Block scoped, best for fixed values.  
+
+## Data Types in JavaScript
+
+There are **two categories** of data types: **primitive** and **reference**.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="4"
+    codes={[
+  {
+    code:
+`// Primitive Types
+let name = "Alice";    // String
+let score = 95;        // Number
+let isPassed = true;   // Boolean
+let notDefined;        // Undefined
+let empty = null;      // Null
+let unique = Symbol(); // Symbol
+let bigNumber = 123n;  // BigInt
+
+// Reference Types
+let colors = ["red", "blue"]; // Array
+let person = { name: "Bob", age: 25 }; // Object
+let greet = function() { console.log("Hi"); }; // Function`,
+    language: "js",
+    label: "dataTypes.js"
+  }
+]} />
+
+✅ **Primitive types** → single values.  
+✅ **Reference types** → collections of data or behaviors.  
+
+## Why This Matters
+
+Knowing variables and data types is the **foundation** of JavaScript.  
+You’ll use them everywhere: from handling user input to fetching data from APIs.
+
+---
+
+👉 Next up in **Day 2**: **Operators & Expressions** ✨

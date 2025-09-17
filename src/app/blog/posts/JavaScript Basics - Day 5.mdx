@@ -1,0 +1,130 @@
+---
+title: "JavaScript Basics - Day 5: Loops & Iteration"
+summary: "Learn how to use loops in JavaScript to repeat tasks, including for, while, do...while, and modern iteration methods like for...of and forEach."
+image: "/images/blogs/js-day5.jpg"
+publishedAt: "2025-09-21"
+tag: "JavaScript Basics"
+---
+
+## Introduction
+
+Welcome to **Day 5** of the JavaScript Basics series 🎉.  
+Today we’ll learn about **loops and iteration** — techniques that allow you to repeat actions until a condition is met.
+
+---
+
+## The `for` Loop
+
+The classic `for` loop repeats a block of code a specific number of times.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`for (let i = 1; i <= 5; i++) {
+  console.log("Number: " + i);
+}
+
+// Output: 1 2 3 4 5`,
+    language: "js",
+    label: "for-loop.js"
+  }
+]} />
+
+---
+
+## The `while` Loop
+
+The `while` loop runs as long as its condition is true.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`let count = 1;
+
+while (count <= 3) {
+  console.log("Count is " + count);
+  count++;
+}`,
+    language: "js",
+    label: "while-loop.js"
+  }
+]} />
+
+---
+
+## The `do...while` Loop
+
+The `do...while` loop runs **at least once**, even if the condition is false.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`let num = 5;
+
+do {
+  console.log("Number is " + num);
+  num++;
+} while (num < 5);`,
+    language: "js",
+    label: "do-while-loop.js"
+  }
+]} />
+
+---
+
+## Looping Through Arrays
+
+### Using `for...of`
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`const fruits = ["Apple", "Banana", "Mango"];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}`,
+    language: "js",
+    label: "for-of.js"
+  }
+]} />
+
+### Using `forEach`
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`fruits.forEach((fruit, index) => {
+  console.log(index + ": " + fruit);
+});`,
+    language: "js",
+    label: "for-each.js"
+  }
+]} />
+
+---
+
+## Why This Matters
+
+Loops make your programs **efficient** by automating repetitive tasks.  
+Whether iterating through an array of products or processing API data, loops are everywhere in JavaScript.
+
+---
+
+🎉 Congrats! You’ve completed the **5-Day JavaScript Basics Series**.  
+With variables, operators, functions, objects/arrays, and loops mastered, you now have a solid foundation in JavaScript. 🚀

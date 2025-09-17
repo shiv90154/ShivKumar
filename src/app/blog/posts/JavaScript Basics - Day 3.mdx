@@ -1,0 +1,127 @@
+---
+title: "JavaScript Basics - Day 3: Functions in JavaScript"
+summary: "Learn how to create and use functions in JavaScript, including function declarations, expressions, and arrow functions."
+image: "/images/blogs/js-day3.jpg"
+publishedAt: "2025-09-19"
+tag: "JavaScript Basics"
+---
+
+## Introduction
+
+Welcome to **Day 3** of the JavaScript Basics series 🎉.  
+Today we’ll learn about **functions** — reusable blocks of code that perform specific tasks.
+
+## Function Declarations
+
+The most common way to create a function is with a declaration.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Alice")); // Hello, Alice!`,
+    language: "js",
+    label: "function-declaration.js"
+  }
+]} />
+
+✅ Functions can take parameters and return values.  
+
+## Function Expressions
+
+You can also store a function in a variable — this is called a **function expression**.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`const add = function(a, b) {
+  return a + b;
+};
+
+console.log(add(5, 3)); // 8`,
+    language: "js",
+    label: "function-expression.js"
+  }
+]} />
+
+## Arrow Functions
+
+ES6 introduced a shorter syntax called **arrow functions**.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`const multiply = (x, y) => x * y;
+
+console.log(multiply(4, 2)); // 8`,
+    language: "js",
+    label: "arrow-functions.js"
+  }
+]} />
+
+✅ Arrow functions are great for short, one-liner functions.  
+
+## Default Parameters
+
+You can provide default values for function parameters.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`function sayHello(name = "Guest") {
+  console.log("Hello, " + name);
+}
+
+sayHello();       // Hello, Guest
+sayHello("Bob");  // Hello, Bob`,
+    language: "js",
+    label: "default-params.js"
+  }
+]} />
+
+## Functions Returning Functions
+
+Functions in JavaScript can even return other functions.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="4"
+    codes={[
+  {
+    code:
+`function outer() {
+  return function inner() {
+    return "I'm the inner function!";
+  };
+}
+
+const result = outer();
+console.log(result()); // I'm the inner function!`,
+    language: "js",
+    label: "function-return.js"
+  }
+]} />
+
+## Why This Matters
+
+Functions make your code **organized, reusable, and easier to read**.  
+They are the foundation of more advanced concepts like callbacks, promises, and async/await.
+
+---
+
+👉 Next up in **Day 4**: **Objects & Arrays in JavaScript** 🧩
