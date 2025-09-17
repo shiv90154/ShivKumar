@@ -14,7 +14,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://shiv-kumar.vercel.app/";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -33,7 +33,7 @@ const display: DisplayConfig = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/work/admin-dashboard": true,
 };
 
 // Import and set font for each variant
@@ -214,12 +214,6 @@ const schema: SchemaConfig = {
   email: "lorant@once-ui.com",
 };
 
-// social links
-const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
-};
 
 // social sharing configuration for blog posts
 const socialSharing: SocialSharingConfig = {
