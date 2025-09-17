@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import {
   About,
   Blog,
@@ -56,7 +58,7 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+   title: `${person.name}&apos;s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Turning ideas into modern web applications</>,
   featured: {

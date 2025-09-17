@@ -14,7 +14,7 @@ export async function GET(request: Request) {
 
     if (resource) {
       const response = await fetch(resource[1]);
-      if (response.status == 200) {
+      if (response.status === 200) {
         return await response.arrayBuffer();
       }
     }
@@ -23,86 +23,90 @@ export async function GET(request: Request) {
   }
 
   return new ImageResponse(
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "100%",
-        padding: "6rem",
-        background: "#151515",
-      }}
-    >
+    (
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          gap: "4rem",
-          fontStyle: "normal",
-          color: "white",
+          width: "100%",
+          height: "100%",
+          padding: "6rem",
+          background: "#151515",
         }}
       >
-        <span
-          style={{
-            padding: "1rem",
-            fontSize: "6rem",
-            lineHeight: "8rem",
-            letterSpacing: "-0.05em",
-            whiteSpace: "wrap",
-            textWrap: "balance",
-            overflow: "hidden",
-          }}
-        >
-          {title}
-        </span>
         <div
           style={{
             display: "flex",
-            alignItems: "center",
-            gap: "5rem",
+            flexDirection: "column",
+            justifyContent: "center",
+            gap: "4rem",
+            fontStyle: "normal",
+            color: "white",
           }}
         >
-          <img
-            src={baseURL + person.avatar}
+          <span
             style={{
-              width: "12rem",
-              height: "12rem",
-              objectFit: "cover",
-              borderRadius: "100%",
+              padding: "1rem",
+              fontSize: "6rem",
+              lineHeight: "8rem",
+              letterSpacing: "-0.05em",
+              whiteSpace: "wrap",
+              textWrap: "balance",
+              overflow: "hidden",
             }}
-          />
+          >
+            {title}
+          </span>
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
+              alignItems: "center",
+              gap: "5rem",
             }}
           >
-            <span
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={baseURL + person.avatar}
+              alt="Profile avatar"
               style={{
-                fontSize: "4.5rem",
-                lineHeight: "4.5rem",
-                whiteSpace: "pre-wrap",
-                textWrap: "balance",
+                width: "12rem",
+                height: "12rem",
+                objectFit: "cover",
+                borderRadius: "100%",
+              }}
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.75rem",
               }}
             >
-              {person.name}
-            </span>
-            <span
-              style={{
-                fontSize: "2.5rem",
-                lineHeight: "2.5rem",
-                whiteSpace: "pre-wrap",
-                textWrap: "balance",
-                opacity: "0.6",
-              }}
-            >
-              {person.role}
-            </span>
+              <span
+                style={{
+                  fontSize: "4.5rem",
+                  lineHeight: "4.5rem",
+                  whiteSpace: "pre-wrap",
+                  textWrap: "balance",
+                }}
+              >
+                {person.name}
+              </span>
+              <span
+                style={{
+                  fontSize: "2.5rem",
+                  lineHeight: "2.5rem",
+                  whiteSpace: "pre-wrap",
+                  textWrap: "balance",
+                  opacity: "0.6",
+                }}
+              >
+                {person.role}
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>,
+    ),
     {
       width: 1280,
       height: 720,
@@ -113,6 +117,6 @@ export async function GET(request: Request) {
           style: "normal",
         },
       ],
-    },
+    }
   );
 }
