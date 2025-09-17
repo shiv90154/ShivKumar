@@ -130,6 +130,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           s={{ direction: "column" }}
           gap="8"
         >
+          {/* Uncomment if you want email input again */}
           {/* <Input
             formNoValidate
             id="mce-EMAIL"
@@ -147,35 +148,26 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             onBlur={handleBlur}
             errorMessage={error}
           /> */}
-          {/* <div style={{ display: "none" }}>
-            <input
-              type="checkbox"
-              readOnly
-              name="group[3492][1]"
-              id="mce-group[3492]-3492-0"
-              value=""
-              checked
-            />
-          </div> */}
+
           <div id="mce-responses" className="clearfalse">
             <div className="response" id="mce-error-response" style={{ display: "none" }}></div>
             <div className="response" id="mce-success-response" style={{ display: "none" }}></div>
           </div>
-          <div className="clear">
-  <Row height="48" vertical="center" fillWidth>
-    <Button
-      as="a"
-      href="https://wa.me/919015484696"
-      target="_blank"
-      rel="noopener noreferrer"
-      size="m"
-      fillWidth
-    >
-      Message on WhatsApp
-    </Button>
-  </Row>
-</div>
 
+          <div className="clear">
+            <Row height="48" vertical="center" fillWidth>
+              <a
+                href="https://wa.me/919015484696"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ width: "100%", textDecoration: "none" }}
+              >
+                <Button size="m" fillWidth>
+                  Message on WhatsApp
+                </Button>
+              </a>
+            </Row>
+          </div>
         </Row>
       </form>
     </Column>
