@@ -130,7 +130,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           s={{ direction: "column" }}
           gap="8"
         >
-          <Input
+          {/* <Input
             formNoValidate
             id="mce-EMAIL"
             name="EMAIL"
@@ -146,8 +146,8 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             }}
             onBlur={handleBlur}
             errorMessage={error}
-          />
-          <div style={{ display: "none" }}>
+          /> */}
+          {/* <div style={{ display: "none" }}>
             <input
               type="checkbox"
               readOnly
@@ -156,27 +156,26 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
               value=""
               checked
             />
-          </div>
+          </div> */}
           <div id="mce-responses" className="clearfalse">
             <div className="response" id="mce-error-response" style={{ display: "none" }}></div>
             <div className="response" id="mce-success-response" style={{ display: "none" }}></div>
           </div>
-          <div aria-hidden="true" style={{ position: "absolute", left: "-5000px" }}>
-            <input
-              type="text"
-              readOnly
-              name="b_c1a5a210340eb6c7bff33b2ba_0462d244aa"
-              tabIndex={-1}
-              value=""
-            />
-          </div>
           <div className="clear">
-            <Row height="48" vertical="center">
-              <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
-                Subscribe
-              </Button>
-            </Row>
-          </div>
+  <Row height="48" vertical="center" fillWidth>
+    <Button
+      as="a"
+      href="https://wa.me/919015484696"
+      target="_blank"
+      rel="noopener noreferrer"
+      size="m"
+      fillWidth
+    >
+      Message on WhatsApp
+    </Button>
+  </Row>
+</div>
+
         </Row>
       </form>
     </Column>

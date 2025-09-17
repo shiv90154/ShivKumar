@@ -23,21 +23,11 @@ const person: Person = {
 };
 
 // ----- Newsletter -----
-// const newsletter: Newsletter = {
-//   display: true,
-//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-//   description: (
-//     <>My weekly newsletter about web development, coding tips, and projects.</>
-//   ),
-// };
-
 const newsletter: Newsletter = {
   display: true,
-  title: <>Contact Me</>,
+  title: <>Contact {person.firstName} on WhatsApp</>,
   description: (
-  <>
-     <b> Newsletter coming soon!</b>
-    </>
+    <>If you want to get in touch, just click the button below to send a WhatsApp message.N</>
   ),
 };
 

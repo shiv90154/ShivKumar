@@ -1,0 +1,132 @@
+---
+title: "JavaScript Basics - Day 4: Objects & Arrays"
+summary: "Learn how to work with objects and arrays in JavaScript, including creating, accessing, and manipulating them."
+publishedAt: "2025-09-20"
+tag: "JavaScript Basics"
+---
+
+## Introduction
+
+Welcome to **Day 4** of the JavaScript Basics series 🎉.  
+Today we’ll explore two fundamental data structures in JavaScript: **Objects** and **Arrays**.  
+They allow you to organize and manage collections of data.
+
+---
+
+## Objects
+
+An **object** is a collection of key–value pairs.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`const person = {
+  name: "Alice",
+  age: 25,
+  isStudent: true
+};
+
+console.log(person.name);   // Alice
+console.log(person["age"]); // 25`,
+    language: "js",
+    label: "object.js"
+  }
+]} />
+
+✅ Objects store data with descriptive keys.  
+
+### Adding & Updating Properties
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`person.city = "Delhi";   // Add new property
+person.age = 26;          // Update property
+
+console.log(person);`,
+    language: "js",
+    label: "object-update.js"
+  }
+]} />
+
+---
+
+## Arrays
+
+An **array** is an ordered list of values (indexed starting from 0).
+
+<CodeBlock
+    marginBottom="16"
+    highlight="3"
+    codes={[
+  {
+    code:
+`const fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits[0]); // Apple
+console.log(fruits[2]); // Mango`,
+    language: "js",
+    label: "array.js"
+  }
+]} />
+
+✅ Arrays are perfect for ordered collections of items.  
+
+### Common Array Methods
+
+<CodeBlock
+    marginBottom="16"
+    highlight="6"
+    codes={[
+  {
+    code:
+`fruits.push("Orange");     // Add at end
+fruits.unshift("Grapes");  // Add at start
+fruits.pop();              // Remove last
+fruits.shift();            // Remove first
+
+console.log(fruits);`,
+    language: "js",
+    label: "array-methods.js"
+  }
+]} />
+
+---
+
+## Combining Objects & Arrays
+
+Objects and arrays are often used together.
+
+<CodeBlock
+    marginBottom="16"
+    highlight="6"
+    codes={[
+  {
+    code:
+`const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 }
+];
+
+console.log(users[0].name); // Alice`,
+    language: "js",
+    label: "objects-arrays.js"
+  }
+]} />
+
+---
+
+## Why This Matters
+
+Objects and arrays are **essential for structuring data** in JavaScript.  
+They are used everywhere — from managing user profiles to handling API responses.
+
+---
+
+👉 Next up in **Day 5**: **Loops & Iteration in JavaScript** 🔄
