@@ -35,18 +35,7 @@ const newsletter: Newsletter = {
   display: true,
   title: <>Contact Me</>,
   description: (
-    <>
-    
-      If you want to contact me, just send a WhatsApp message at{" "}
-      <a
-        href="https://wa.me/919015484696"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <b>9015484696</b>
-      </a>.
-
-      <br />
+  <>
      <b> Newsletter coming soon!</b>
     </>
   ),
